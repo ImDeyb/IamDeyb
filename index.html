@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #ffcccb;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons button {
+	     background-color: #ff69b4;
+    border: none;
+text-align: center;
+    text-decoration: none;
+    display: inline-block;
+border-radius: 16px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+.buttons2 button {
+	     background-color: #ff69b4;
+    border: none;
+text-align: center;
+    text-decoration: none;
+    display: inline-block;
+border-radius: 16px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+.buttons3 button {
+            background-color: #ff69b4;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 16px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+ .hidden {
+            display: none;
+        }
+ #firstPage {
+            display: block;
+        }
+#secondPage {
+            display: none;
+        }
+
+        #loveMessage {
+            color: #ff66b2;
+            font-size: 20px;
+            margin-top: 20px;
+            display: none;
+        }
+#labyomore {
+            display: none;
+        }
+        #helloWafa {
+            display: none;
+        }
+.btn-group button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+ position: absolute;
+    width: 150px;
+    height: inherit;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
+    font-size: 1.2em;
+}
+.btn-group button:nth-child(1) {
+    margin-left: -200px;
+    background: #e94d58;
+}
+.btn-group button:nth-child(2) {
+    margin-right: -200px;
+    background: white;
+    color: #e94d58;
+}
+#labyo, .wrapper {
+  display: none;
+}
+h2 {
+    text-align: center;
+    font-size: 3em;
+    color: #e94d58;
+    margin: 15px 0;
+} 
+   </style>
+    <title>Lagyan ng label yan! joke!</title>
+</head>
+<body>
+<div id="firstPage" class="container">
+        <h1>Hey! I like you! 🥰</h1>
+        <div class="buttons" onclick="proceedToSecondPage()">TAP MO AKO PLS!!!😚</div>
+    </div>
+
+   <div id="secondPage" class="container hidden">
+        <h1>Could you be mine?😅</h1>
+        <div class="buttons">
+            <button id="yesButton" onclick="showLove()">YES</button>
+            <button id="noButton" onmouseover="moveButton()">NO</button>
+        </div>
+<iframe src="https://giphy.com/embed/vFKqnCdLPNOKc" width="480" height="359" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <div id="loveMessage">
+            <p>HAHAHAHA! Kabalo gid ko kapoy ka now and I don't really know what's going on in my mind ngaa paabrihon ta ka laptop just for you to see this. Uhm... I've been carrying a secret in my heart (wow HAHAHA wowowin), and I can't keep it in any longer. You are the reason I smile for no reason, even on my loneliest days—the thought that brightens my darkest moments. I have fallen for you, completely and utterly. I can't explain why but every time mag chat ta I feel so alive. Every time mag pop up chat head mo ganami gid ang adlaw ko. HAHAHA, if you're not yet ready, it's okay! ma wait ko. I'll pursue you. I won't stop until I make you mine. I Meow You! 😽❤️</p>
+<iframe src="https://giphy.com/embed/MDJ9IbxxvDUQM" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div class="buttons2">
+<button id="simoNalangKo" onclick="goToNextPage()">Click ni Leaa! HAHAHA!</button>
+</div>
+
+    </div>
+<audio id="backgroundAudio" src="C:\Users\USER\Desktop\Leya\others\mrld  Ligaya Official Audio.mp3"></audio>
+</div>
+
+<div id ="labyo" class="wrapper">
+<div class="buttons3">
+<button id="helloWafa" onclick="goToLastPage()">Click pa gid ni. HAHAHA!</button>
+</div>
+       <h2 class="question">Do you love me?</h2>
+        <img class="gif" alt="gif" src="https://media0.giphy.com/media/t8Lo2mPAzOcmVTgtGe/giphy.gif?cid=6c09b952231uyrnduhdsf4wqnxz03rv9wx3ni5sm0zolrxz3&ep=v1_stickers_related&rid=giphy.gif&ct=s"/>
+        <div class="btn-group">
+            <button class="yes-btn">Yes</button>
+            <button class="no-btn">No</button>
+        </div>
+    </div>
+
+<div id ="labyomore" class="container">
+        <h2 class="question">Matie lang ang kanta HAHAHAHA </h2>
+<iframe src="C:\Users\USER\Desktop\Leya\others\peach-goma.gif" width="500" height="500" frameBorder="0"></iframe>
+</div>	
+
+<script>
+ function goToLastPage() {
+            document.getElementById('firstPage').style.display = 'none';
+            document.getElementById('secondPage').style.display = 'none';
+            document.getElementById('labyo').style.display = 'none';
+            document.getElementById('labyomore').style.display = 'block';
+            document.getElementById('helloWafa').style.display = 'none';}
+function goToNextPage() {
+  document.getElementById('firstPage').style.display = 'none';
+  document.getElementById('secondPage').style.display = 'none';
+  document.getElementById('helloWafa').style.display = 'none';
+  document.getElementById('labyo').style.display = 'block';
+
+}
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the audio element
+    var audio = document.getElementById('backgroundAudio');
+
+    // Function to play audio
+    function playAudio() {
+      audio.play();
+    }
+
+    // Attach a click event listener to the document
+    document.addEventListener('click', function () {
+      // Play audio on click
+      playAudio();
+    });
+
+    // Event listener for when the audio finishes playing
+    audio.addEventListener('ended', function() {
+      // Redirect to another page
+      window.location.href = 'C:\\Users\\USER\\Desktop\\Leya\\others\\flowers_page.html';
+    });
+  });
+function proceedToSecondPage() {
+            // Hide the first page
+            document.getElementById('firstPage').style.display = 'none';
+            // Show the second page
+            document.getElementById('secondPage').style.display = 'block';
+        }
+
+        function showLove() {
+            // Hide the buttons and the initial content
+            document.getElementById('yesButton').style.display = 'none';
+            document.getElementById('noButton').style.display = 'none';
+            document.querySelector('.buttons').style.display = 'none';
+            document.querySelector('h1').style.display = 'none';
+            document.querySelector('iframe:first-of-type').style.display = 'none';
+
+            // Display the loveMessage
+            document.getElementById('loveMessage').style.display = 'block';
+        }
+
+        function moveButton() {
+            const button = document.getElementById('noButton');
+            const maxX = window.innerWidth - button.clientWidth;
+            const maxY = window.innerHeight - button.clientHeight;
+
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+
+            button.style.position = 'absolute';
+            button.style.left = `${randomX}px`;
+            button.style.top = `${randomY}px`;
+        }
+// <![CDATA[
+var colours=new Array('#f00', '#f06', '#f0f', '#f6f', '#f39', '#f9c'); // colours of the hearts
+var minisize=15; // smallest size of hearts in pixels
+var maxisize=30; // biggest size of hearts in pixels
+var hearts=100; // maximum number of hearts on screen
+var over_or_under="over"; // set to "over" for hearts to always be on top, or "under" to allow them to float behind other objects
+
+var x=ox=400;
+var y=oy=300;
+var swide=800;
+var shigh=600;
+var sleft=sdown=0;
+var herz=new Array();
+var herzx=new Array();
+var herzy=new Array();
+var herzs=new Array();
+var kiss=false;
+
+if (typeof('addRVLoadEvent')!='function') function addRVLoadEvent(funky) {
+  var oldonload=window.onload;
+  if (typeof(oldonload)!='function') window.onload=funky;
+  else window.onload=function() {
+    if (oldonload) oldonload();
+    funky();
+  }
+}
+
+addRVLoadEvent(mwah);
+
+function mwah() { if (document.getElementById) {
+  var i, heart;
+  for (i=0; i<hearts; i++) {
+    heart=createDiv("auto", "auto");
+    heart.style.visibility="hidden";
+	heart.style.zIndex=(over_or_under=="over")?"1001":"0";
+    heart.style.color=colours[i%colours.length];
+	heart.style.pointerEvents="none";
+    if (navigator.appName=="Microsoft Internet Explorer") heart.style.filter="alpha(opacity=75)";
+    else heart.style.opacity=0.45;
+    heart.appendChild(document.createTextNode(String.fromCharCode(9829)));
+    document.body.appendChild(heart);
+    herz[i]=heart;
+	herzy[i]=false;
+  }
+  set_scroll();
+  set_width();
+  herzle();
+}}
+
+function herzle() {
+  var c;
+  if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
+    ox=x;
+    oy=y;
+    for (c=0; c<hearts; c++) if (herzy[c]===false) {
+	  herz[c].firstChild.nodeValue=String.fromCharCode(9829);
+      herz[c].style.left=(herzx[c]=x-minisize/2)+"px";
+      herz[c].style.top=(herzy[c]=y-minisize)+"px";
+      herz[c].style.fontSize=minisize+"px";
+	  herz[c].style.fontWeight='normal';
+      herz[c].style.visibility='visible';
+      herzs[c]=minisize;
+      break;
+    }
+  }
+  for (c=0; c<hearts; c++) if (herzy[c]!==false) blow_me_a_kiss(c);
+  setTimeout("herzle()", 30);
+}
+
+document.onmousedown=pucker;
+document.onmouseup=function(){clearTimeout(kiss);};
+
+function pucker() {
+  ox=-1;
+  oy=-1;
+  kiss=setTimeout('pucker()', 100);
+}
+
+function blow_me_a_kiss(i) {
+  herzy[i]-=herzs[i]/minisize+i%2;
+  herzx[i]+=(i%5-2)/5;
+  if (herzy[i]<sdown-herzs[i] || herzx[i]<sleft-herzs[i] || herzx[i]>sleft+swide-herzs[i]) {
+    herz[i].style.visibility="hidden";
+    herzy[i]=false;
+  }
+  else if (herzs[i]>minisize+1 && Math.random()<2.5/hearts) break_my_heart(i);
+  else {
+    if (Math.random()<maxisize/herzy[i] && herzs[i]<maxisize) herz[i].style.fontSize=(++herzs[i])+"px";
+    herz[i].style.top=herzy[i]+"px";
+    herz[i].style.left=herzx[i]+"px";
+  }
+}
+
+function break_my_heart(i) {
+  var t;
+  herz[i].firstChild.nodeValue=String.fromCharCode(9676);
+  herz[i].style.fontWeight='bold';
+    herzy[i]=false;
+  for (t=herzs[i]; t<=maxisize; t++) setTimeout('herz['+i+'].style.fontSize="'+t+'px"', 60*(t-herzs[i]));
+  setTimeout('herz['+i+'].style.visibility="hidden";', 60*(t-herzs[i]));
+}
+
+document.onmousemove=mouse;
+function mouse(e) {
+  if (e) {
+    y=e.pageY;
+    x=e.pageX;
+  }
+  else {
+    set_scroll();
+    y=event.y+sdown;
+    x=event.x+sleft;
+  }
+}
+
+window.onresize=set_width;
+function set_width() {
+  var sw_min=999999;
+  var sh_min=999999;
+  if (document.documentElement && document.documentElement.clientWidth) {
+    if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+    if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+  }
+  if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+    if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+    if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+  }
+  if (document.body.clientWidth) {
+    if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+    if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+  }
+  if (sw_min==999999 || sh_min==999999) {
+    sw_min=800;
+    sh_min=600;
+  }
+  swide=sw_min;
+  shigh=sh_min;
+}
+
+window.onscroll=set_scroll;
+function set_scroll() {
+  if (typeof(self.pageYOffset)=='number') {
+    sdown=self.pageYOffset;
+    sleft=self.pageXOffset;
+  }
+  else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+    sdown=document.body.scrollTop;
+    sleft=document.body.scrollLeft;
+  }
+  else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+    sleft=document.documentElement.scrollLeft;
+    sdown=document.documentElement.scrollTop;
+  }
+  else {
+    sdown=0;
+    sleft=0;
+  }
+}
+
+function createDiv(height, width) {
+  var div=document.createElement("div");
+  div.style.position="absolute";
+  div.style.height=height;
+  div.style.width=width;
+  div.style.overflow="hidden";
+  div.style.backgroundColor="transparent";
+  return (div);
+}
+// ]]>
+const wrapper = document.querySelector(".wrapper");
+const question = document.querySelector(".question");
+const gif = document.querySelector(".gif");
+const yesBtn = document.querySelector(".yes-btn");
+const noBtn = document.querySelector(".no-btn");
+
+yesBtn.addEventListener("click", () => {
+setTimeout(function() {
+    document.getElementById('helloWafa').style.display = 'block';
+ }, 2500);
+  question.innerHTML = "I love you too! 😘";
+  gif.src =
+    "https://media1.giphy.com/media/iCVzZwwE6QNAV2tEE0/giphy.gif";
+});
+
+noBtn.addEventListener("mouseover", () => {
+  const noBtnRect = noBtn.getBoundingClientRect();
+  const maxX = window.innerWidth - noBtnRect.width;
+  const maxY = window.innerHeight - noBtnRect.height;
+
+  const randomX = Math.floor(Math.random() * maxX);
+  const randomY = Math.floor(Math.random() * maxY);
+
+  noBtn.style.left = randomX + "px";
+  noBtn.style.top = randomY + "px";
+});
+    </script>
+</body>
+</html>
